@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>aaaaaa</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body onMouseDown="return false;" onSelectStart="return false" oncontextmenu="return false;">
+	<div id="PassageArea">(ここにカウントが表示されます)</div>
+	<img src="img/canvas_sample_asakachip.png" id="t1" onclick="click1();" class="element-animation">
+	<img src="img/canvas_sample_asakachip.png" id="t2" onclick="click1();" class="element-animation1">
+	<img src="img/canvas_sample_asakachip.png" id="t3" onclick="click1();" class="element-animation2">
+	<img src="img/canvas_sample_asakachip.png" id="t4" onclick="click1();" class="element-animation3">
+	<img src="img/canvas_sample_asakachip.png" id="t5" onclick="click1();" class="element-animation4">	
+	<div id="t5" onclick="click1();" class="element-animation4">e</div>
+
+	<div id="c1">aa</div>
+	<div id="c2">bb</div>
+	<div id="c3">cc</div>
+	<div id="c4">dd</div>
+	<div id="c5">ee</div>
+
+
+	<div id="sidenavi">
+		<div id="meter">
+			<div id="UserName" onclick="requestFullScreen(myvideo);">ユーザー名:要ログイン</div>
+		</div>
+		<div id="meter">
+			<div id="Point" onclick="exitFull();">ポイント:要ログイン</div>
+		</div>
+
+		<table>
+			<tr>
+				<td>
+					<input type="button" value="テストID読み込み" onclick="printIDmDummyWithoutServer();"> </td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="ゲームスタート" id="game_start" onclick="game_start('1');">
+					<input type="button" value="ゲストとしてゲーム" id="ggame_start" onclick="game_start(0);">
+					<input type="button" value="クリック！！！" id="ck_button" onclick="ck();">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="ログアウト" onclick="logout()">
+				</td>
+			</tr>
+
+		</table>
+	</div>
+	<div id="score">
+		aaaaaaaaaaaa
+	</div>
+
+	<script>
+
+	</script>
+	<script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+	<script type="text/javascript" src="js/account.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/nfc_client.js"></script>
+	<script type="text/javascript" src="js/yjdmd5.js"></script>
+</body>
+
+</html>

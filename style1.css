@@ -1,0 +1,233 @@
+body {
+    user-select: none;
+    touch-callout: none;
+}
+
+#t1 {
+    position: absolute;
+    top: 30vh;
+    left: -10vw;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+#t1:active {
+    width: 130px;
+    height: 160px;
+}
+
+#t2 {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+#t2:active {
+    width: 90px;
+    height: 70px;
+}
+
+#t3 {
+    position: absolute;
+    top: 70vh;
+    left: 0vw;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+
+#t4 {
+    position: absolute;
+    top: 0;
+    left:30vw;
+    left: 800px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+
+#t5 {
+    position: absolute;
+    top: -10%;
+    left: 30vw;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+
+#c1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8%;
+    height: 100vh;
+    background-color: red;
+    z-index: 2;
+}
+
+#c2 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    height: 10vh;
+    background-color: red;
+    z-index: 2;
+}
+
+#c3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8%;
+    height: 100vh;
+    background-color: red;
+    z-index: 2;
+}
+
+
+
+
+/* 左3個 上2個 右1個　自由1個 */
+/* ここから左t1~t3 */
+.element-animation {
+    animation: animationFrames linear 3s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    45% {
+        transform: translate(10vw, 20vh) rotate(44deg);
+    }
+    60% {
+        transform: translate(0vw, -10vh) rotate(7deg);
+    }
+    75% {
+        transform: translate(50vw, 20vh) rotate(46deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.element-animation1 {
+    animation: animationFrames1 linear 3s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames1 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    60% {
+        transform: translate(20vw, 60vh) rotate(7deg);
+    }
+    100% {
+        transform: translate(0, 90vh) rotate(0deg);
+    }
+}
+
+.element-animation2 {
+    animation: animationFrames2 linear 4s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames2 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50%{
+        transform: translate(20vw, 0) rotate(180deg);        
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+
+/* ここから上t4~t5 */
+.element-animation3 {
+    animation: animationFrames3 linear 1s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames3 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50%{
+        transform: translate(0, 40vh) rotate(180deg);        
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+.element-animation4 {
+    animation: animationFrames4 linear 2s infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames4 {
+    0% {
+        transform: translate(0, 0) rotate(180deg);
+    }
+    20%{
+        transform: translate(0, 40vh) rotate(180deg);        
+    }
+    40%{
+        transform: translate(0, 30vh) rotate(180deg);        
+    }
+    60%{
+        transform: translate(0, 50vh) rotate(180deg);        
+    }
+    100% {
+        transform: translate(0, 0) rotate(180deg);
+    }
+}
+/* ------------------- */
+
+#sidenavi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    z-index: 3;
+}
+
+#meter {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    background-color: black;
+    color: rgb(185, 255, 185);
+    border: medium solid #fff;
+}
+
+table {
+    width: 100px;
+    height: 500px;
+}
+
+#score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    z-index: 3;
+}
+#PassageArea{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blueviolet;
+    z-index: 3;
+}
